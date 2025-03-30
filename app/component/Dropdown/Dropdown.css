@@ -1,0 +1,57 @@
+/* Dropdown container styling */
+.dropdown-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Dropdown select box styling */
+  .dropdown {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown:focus {
+    outline: none;
+    border-color: #4f81bd;
+    box-shadow: 0 0 5px rgba(79, 129, 189, 0.5);
+  }
+  
+  .dropdown:hover {
+    border-color: #4f81bd;
+  }
+  
+  .dropdown option {
+    padding: 12px 16px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  
+  /* Adding a subtle hover effect on the select dropdown */
+  .dropdown-container:hover .dropdown {
+    border-color: #4f81bd;
+  }
+  
+  .dropdown:focus + .dropdown-container::after {
+    border-top-color: #4f81bd;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .dropdown {
+      font-size: 16px;
+      padding: 14px 18px;
+    }
+  }
+  
